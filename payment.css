@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100;
+}
+span{
+    color: #FF0032;
+}
+.container{
+    height: 60vh;
+    width: 800px;
+    background-color: white;
+    margin-top: 20vh;
+    border-radius: 10px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.navbar button{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar button:hover{
+    background-color: #1A0000;
+    color: white;
+}
+.logo{
+    display: flex;
+    padding: 15px;
+    justify-items: center;
+}
+.logo img{
+    height: 25px;
+}
+.time{
+    display: flex;
+    padding-left: 200px;
+}
+.time button{
+    padding: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.cards{
+    padding: 15px;
+    display: flex;
+}
+.cards p,.cvv p, .Expiry p{
+    font-size: 10px;
+    padding-top: 3px;
+}
+form input{
+    width: 400px;
+    border: none;
+    background-color: #F7F7F7;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+form img{
+    height: 30px;
+    margin-left: 360px;
+    transform: translateY(-29px);
+}
+.cvv,.Expiry,.pay,.container1{
+    padding-left: 15px;
+}
+.cvv form input,.Expiry form input{
+    width: 150px;
+    border: none;
+    background-color: #F7F7F7;
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 3px;
+    margin-left: 250px;
+    transform: translateY(-37px);
+}
+.pay{
+    width: 400px
+}
+.pay h3{
+    background-color: #1D1CE5;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.container1{
+    height: 30vh;
+    background-color: white;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: -245px;
+    border-radius: 8px;
+    background-image: url(./img/banner-right-dec.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.container1 img{
+    height: 25px;
+    padding-left: 140px;
+    transform: translateY(-18px);
+}
+.container2{
+    height: 38vh;
+    background-color: #DDDDDD;
+    width: 280px;
+    margin-top: 300px;
+    margin-left: -330px;
+    border-radius: 8px;
+    padding-top: 15px;
+}
+.container2 table{
+    margin-top: 115px;
+    font-weight: lighter;
+}
+th, td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 33px;
+    text-align: left;
+  }
+th{
+    font-weight: 100;
+    color: gray;
+}
+.break{
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+    padding-right: 20px;
+    
+}
+.container2 h6{
+    font-size: 8px;
+    padding-left: 15px;
+    margin-top: -4px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+        size: 500px;
+        
+    }
+    .cards,.cvv,.Expiry{
+        width: 100%;
+        size: 500px;
+    }
+    .cards form input{
+        width: 100%;
+        size: 500px;
+    }
+    .cvv form input,.Expiry form input{
+        transform: translateX(0);
+        width: 150px;
+        size: 500px;
+        margin-left: 0;
+    }
+    .container2{
+        margin-top: 106vh;
+    }
+    .container1{
+        margin-top: 90vh;
+        padding-left: 25px;
+    }
+  }

