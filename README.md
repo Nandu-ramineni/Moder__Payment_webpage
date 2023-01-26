@@ -1,4 +1,4 @@
-# Moder__Payment_webpage
+# Modern__Payment_webpage
 -------------------------------------
 1. Import the code.
 2. Add your own style
